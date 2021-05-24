@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class HomeWorkApp_2 {
-
     public static void main(String[] args) {
 // обращение к первому методу
         boolean a = firstCheck(7, 8);
@@ -23,7 +22,6 @@ public class HomeWorkApp_2 {
         } else {
             System.out.println("Год не високосный");
         }
-
     }
     public static boolean firstCheck ( int a1, int b1){
         return (10<(a1+b1) && (a1+b1)<20);
@@ -47,14 +45,12 @@ public class HomeWorkApp_2 {
             System.out.println(text);
         }
     }
-
     public static boolean withStar (){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите текущий год. Вместе узнаем является ли данный год високосным...");
         int f = scanner.nextInt();
         return f % 4 == 0 && f % 100 != 0 && f % 400 == 0;
         }
-
 }
 
 
